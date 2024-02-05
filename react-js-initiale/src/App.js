@@ -16,6 +16,23 @@ import './App.css';
   })
  }
 
+ chageViaParams = (titre) =>{
+  this.setState({
+    titre: titre
+  })
+ }
+
+
+ chageViaBind = (param) =>{
+  this.setState({
+    titre: param
+  })
+ }
+
+ chageViaBind = (e) => {
+    
+ }
+
   render (){
 
     return (
@@ -23,6 +40,9 @@ import './App.css';
 
         <Mycars title={this.state.titre}/>
         <button onClick={this.ChangeTilte}>Changer le nom en dur</button>
+        <button onClick={() => this.chageViaParams('Titre via un params')}>Via params</button>
+        <button onClick={this.chageViaBind.bind(this,'Titre via Bind')}>Via Bind</button>
+        <input type='text' onChange={this.chageViaInput} value={this.state.titre} />
       </div>
     );
 
