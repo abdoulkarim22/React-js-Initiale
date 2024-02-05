@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import Car from './components/Cars';
 import Mycars from './components/Mycars';
 import './App.css';
 
@@ -10,31 +9,31 @@ import './App.css';
  state = {
    titre: ' Mon catalogue Voiture garage'
  }
- ChangeTilte = (e) =>{
-  this.setState({
-    titre:"Mon niveau titre"
-  })
- }
+//  ChangeTilte = (e) =>{
+//   this.setState({
+//     titre:"Mon niveau titre"
+//   })
+//  }
 
- chageViaParams = (titre) =>{
-  this.setState({
-    titre: titre
-  })
- }
+//  chageViaParams = (titre) =>{
+//   this.setState({
+//     titre: titre
+//   })
+//  }
 
 
- chageViaBind = (param) =>{
-  this.setState({
-    titre: param
-  })
- }
+//  chageViaBind = (param) =>{
+//   this.setState({
+//     titre: param
+//   })
+//  }
 
- chageViaInput = (e) => {
-    console.log(e.target.value);
-    this.setState({
-      titre : e.target.value
-    })
- }
+//  chageViaInput = (e) => {
+//     console.log(e.target.value);
+//     this.setState({
+//       titre : e.target.value
+//     })
+//  }
 
   render (){
 
@@ -42,10 +41,9 @@ import './App.css';
       <div className='App'>
 
         <Mycars title={this.state.titre}/>
-        <button onClick={this.ChangeTilte}>Changer le nom en dur</button>
-        <button onClick={() => this.chageViaParams('Titre via un params')}>Via params</button>
-        <button onClick={this.chageViaBind.bind(this,'Titre via Bind')}>Via Bind</button>
-        <input type='text' onChange={this.chageViaInput} value={this.state.titre} />
+        {/* <button onClick={this.ChangeTilte}>Changer le nom en dur</button>
+        <button onClick={() => this.chageViaParams('Titre via un params')}>Via params</button> 
+        <input type='text' onChange={this.chageViaInput} value={this.state.titre} /> */}
       </div>
     );
 
