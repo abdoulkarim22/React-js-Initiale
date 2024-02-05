@@ -9,7 +9,7 @@ import './App.css';
 
 
 state = {
-  titre: ' Mon catalogue Voitures' 
+  titre: ' Mon catalogue Voiture garage' 
 }
 
 
