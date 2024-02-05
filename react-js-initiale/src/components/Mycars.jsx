@@ -4,7 +4,7 @@ class Mycars extends Component{
     render (){
         return (
             <>
-            <h1>Hello REACT JS</h1>
+           
             </>
         )
     }

@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import Mycars from './components/Mycars';
 import Car from './components/Cars';
 import './App.css';
 
@@ -10,8 +9,12 @@ import './App.css';
 
     return (
       <div className='App'>
-      <Mycars/>
-      <Car/> 
+
+      <h1>Hello REACT JS</h1>
+
+        <Car color='red'>Ford</Car>
+        <Car olor='green'>Mercedes</Car>
+        <Car color="black"></Car>
       </div>
     );
 
