@@ -9,7 +9,13 @@ noCopy = () => {
 }
 
 addStyle = (e) =>{
-   console.log(e);
+   console.log(e.target);
+
+   if (e.target.classList.contains('styled')) {
+    e.target.classList.remove("styled");
+   }else{
+    e.target.classList.add("styled");
+   }
 }
 
     render (){
