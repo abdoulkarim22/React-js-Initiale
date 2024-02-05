@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
-import Banner from "./component/Banner";
 
-function App() {
-  return (
-    <>
-   <Banner/>
-    </>
-  );
+
+ class  App extends Component  {
+  
+  render (){
+
+    return (
+      <>
+        
+      </>
+    );
+
+  }
 }
 
 export default App;
