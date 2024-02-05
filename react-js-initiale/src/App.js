@@ -29,8 +29,11 @@ import './App.css';
   })
  }
 
- chageViaBind = (e) => {
-    
+ chageViaInput = (e) => {
+    console.log(e.target.value);
+    this.setState({
+      titre : e.target.value
+    })
  }
 
   render (){
