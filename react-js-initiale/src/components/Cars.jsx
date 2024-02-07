@@ -8,11 +8,11 @@ const Car = ({children,color,year}) => {
 if (children) {
     return(
         <>
-         
-            <p>Marque: {children}</p>
-            <p>Année: {year}</p>
-            <p>Color: {color}</p>
-
+            <tr>
+              <td><p>Marque: {children}</p></td>
+              <td><p>Année: {year}</p></td>
+              <td><p>Color: {color}</p></td>
+            </tr>
         </>
        )
     
