@@ -48,7 +48,9 @@ addYear = () => {
        
             <table>
                 <tr>
-                    
+                    <th>Marque</th>
+                    <th>Age</th>
+                    <th>Color</th>
                 </tr>
                <h1>{this.props.title}</h1> 
                <button onClick={this.addYear}>+10 ans</button>
