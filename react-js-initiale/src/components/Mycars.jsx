@@ -45,14 +45,14 @@ addYear = () => {
 
         return ( 
             <>
-                      <h1>{this.props.title}</h1> 
+            <h1>{this.props.title}</h1> 
+            <div className="divButton"><button onClick={this.addYear}>+10 ans</button></div>
             <table className="carsTable">
                 <tr>
                     <th>Marque</th>
                     <th>Age</th>
                     <th>Color</th>
                 </tr>
-               <button onClick={this.addYear}>+10 ans</button>
                <Car color={this.state.voitures[0].color} year={ newyear - this.state.voitures[0].year + 'ans'}>{this.state.voitures[0].name}</Car>
                <Car color={this.state.voitures[1].color} year={ newyear - this.state.voitures[1].year + 'ans'}>{this.state.voitures[1].name}</Car>
                <Car color={this.state.voitures[2].color} year={ newyear - this.state.voitures[2].year + 'ans'}>{this.state.voitures[2].name}</Car>
