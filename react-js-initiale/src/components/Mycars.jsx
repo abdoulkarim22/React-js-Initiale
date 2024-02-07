@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component,Fragment } from "react";
 import Car from "./Cars";
 
 class Mycars extends Component{
@@ -44,7 +44,7 @@ addYear = () => {
         const newyear = new Date().getFullYear();  
 
         return ( 
-            <>
+            <Fragment>
              <div>
 
              <h1>{this.props.title}</h1> 
@@ -54,7 +54,7 @@ addYear = () => {
               <Car color={this.state.voitures[2].color} year={ newyear - this.state.voitures[2].year + 'ans'}>{this.state.voitures[2].name}</Car>
         
              </div>
-            </>
+            </Fragment>
         )
     }
 }
