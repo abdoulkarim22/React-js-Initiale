@@ -1,12 +1,13 @@
-
-import './App.css';
 import React from 'react'
-import Results from './components/Play';
+import './App.css';
+import Form from './components/Forms';
+
+
 
 function App() {
   return (
     <>
-     <Results/>
+     <Form/>
     </>
   )
 }
