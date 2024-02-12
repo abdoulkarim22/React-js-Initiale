@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import Car from "./Car";
 
+const titreRed = {
+    color:'red',
+    fontSize:'50px'
+}
 
 class Form extends Component{
     render(){
         return(
             <div className="App">
-             <Car width="700" height="700" />
-              <h1>Commentaires</h1>
-              Formulaires
+              <h1 style={titreRed}>Commentaires</h1>
+              <button>Valider</button>
             </div>
         )
     }
