@@ -7,7 +7,7 @@ import Form from './components/Forms';
 function App() {
   return (
     <>
-     <Form/>
+     <Form head={true}/>
     </>
   )
 }
