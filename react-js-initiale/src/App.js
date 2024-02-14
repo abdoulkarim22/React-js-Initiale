@@ -2,13 +2,14 @@ import React from 'react'
 import './App.css';
 import Form from './components/Forms';
 import LifeCycle from './components/LifeCycle';
+import ChildComponent from './components/ChildComponent';
 
 
 
 function App() {
   return (
     <>
-     <LifeCycle/>
+    <ChildComponent/>
     </>
   )
 }
