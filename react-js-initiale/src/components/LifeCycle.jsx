@@ -1,21 +1,26 @@
-
-
 import React, { Component } from 'react'
 
-export class LifeCycle extends Component {
+ class LifeCycle extends Component {
 
     constructor(props) {
         super(props)
       
         this.state = {
-           
+         name:"Toto",
+         step: 1 
         }
+        console.log(`Etape ${this.state.step} : je suis dans constructeur()`);
       }
-
+   componentDidMount(){
+  
+    }
   render() { 
+    console.log(`Etape ${this.state.step} : je suis dans render()`);
     return (
       <div>
-        <h1></h1>
+        {    console.log(`Etape ${this.state.step} : mise a jour`)}
+        <h1>Chargement: {this.state.step}</h1>
+        <h3>Nom: {this.state.name}</h3>
       </div>
     )
   }
