@@ -3,13 +3,14 @@ import './App.css';
 import Form from './components/Forms';
 import LifeCycle from './components/LifeCycle';
 import ChildComponent from './components/ChildComponent';
+import Myrefs from './components/Myrefs';
 
 
 
 function App() {
   return (
     <>
-    <ChildComponent/>
+  <Myrefs/>
     </>
   )
 }
